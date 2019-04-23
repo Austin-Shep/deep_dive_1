@@ -1,6 +1,6 @@
-#Wednesday 4/24 Project 1; Week 1: **Deep dive**
+# Wednesday 4/24 Project 1; Week 1: **Deep dive**
 ******
-##TOPICS:
+## TOPICS:
 - Intro To Remote Servers
     -AJAX/APIs
 - Intro To Remote Data Storage 
@@ -8,46 +8,46 @@
 - Intro To Javascript Libraries 
     - Moment.js
 
-###Useful links
+### Useful links
 (https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/)[dom manipulation in vanilla javscript]
 
 (https://www.w3schools.com/jsref/jsref_obj_string.asp)[string methods and manipulation]
 
 
-#AJAX/APIs
-###What Is a remote server?
+# AJAX/APIs
+### What Is a remote server?
 A remote server is just someone elses computer running code or applications and managing data. 
 
-###What makes a remote server different from your computer?
+### What makes a remote server different from your computer?
 When you ask a server for data it will present you with data. 
 
-###Who cares? What about APIS? 
+### Who cares? What about APIS? 
 APIs are how we communicate with servers and their applications (code)
 
-##APIs
+## APIs
 An **A**pplication **P**rogram **I**nterface is a way for us to trigger server side code using URL's. Usually to `GET` and `POST` data. (more on that later)
 
 any questions before we get into the code?
 
 Lets examine code.
 
-#Remote data storage
-###what is it and why do we do it?
+# Remote data storage
+### what is it and why do we do it?
 "the cloud" is just another server (or servers). This allows us to manage larger data sets, and 
 transmit data and interactions from users around the globe.
 
-##Firebase
+## Firebase
 firebase is a simple, (mostly) free, real-time, cloud like data storage service. Firebase is compatable with Mobile, Web, OOP and unity based projects. Not quite a true database, but is a great introduction into the idea.
 
-###how
+### How
 Firebase is an API that comes with a code library, by way of a cdn(Much like jquery). We are provided with pre-defined Methods (functions within an object) to execute diferent bits of code (database.ref() for example)that will allow us to interface with bits of JSON data being stored in Googles servers. 
 
 any questions before we get into the code?
 
 Lets get into some code.
 
-#Javascript Libraries (moment)
-###What are Libraries?
+# Javascript Libraries (moment)
+### What are Libraries?
 Simply put, Libraries are absracted pieces of code written by somebody else so you dont have to. some popular examples:
 - Jquery
 - MomentJs
