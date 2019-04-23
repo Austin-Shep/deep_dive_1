@@ -9,9 +9,9 @@
     - Moment.js
 
 ### Useful links
-[https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/](dom manipulation in vanilla javscript)
+[https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/] (dom manipulation in vanilla javscript)
 
-[https://www.w3schools.com/jsref/jsref_obj_string.asp](string methods and manipulation)
+[https://www.w3schools.com/jsref/jsref_obj_string.asp] (string methods and manipulation)
 
 
 # AJAX/APIs
