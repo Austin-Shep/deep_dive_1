@@ -7,11 +7,16 @@ $("#sForm").on("submit", (event) => {
     let newUser = {
         name: $("input[name = name]").val().trim(),
         email: $("input[name = email]").val().trim(),
-        birthday: moment($("input[name = birthday]").val().trim(), "MM/DD/YYYY").format("X")
+        birthday: moment($("input[name = birthday]").val().trim(), "MM/DD").format("X")
     }
-    console.log(`new user:\n${JSON.stringify(newUser)}`)
+    console.log(`new user:\n ${JSON.stringify(newUser)}`)
     return database.ref("user/").push(newUser).key
 })
+
+const calulateBirthday = (bd) =>{
+    //write a function that takes in a moment formated date as an arg, and return the amount of days till your next birthday
+    return moment().dif(bd, true)
+}
 
 const profileCard = (user) => {
     let post = $("#profileDisp"),
@@ -19,6 +24,7 @@ const profileCard = (user) => {
             $("<h2>").text(`name: ${user.val().name}`).attr("data-name", user.val().name),
             $("<h3>").text(`email: ${user.val().email}`).attr("data-email", user.val().email),
             $("<h3>").text(`birthday: ${user.val().birthday}`).attr("data-birthday", user.val().birthday),
+            $("<p>").text(`Your birthday is in ${calulateBirthday(user.val().birthday)} days`)
             $("<p>", { "class": "delete", "id": user.key }).text("X")
         )
     return post.append(newDiv)
