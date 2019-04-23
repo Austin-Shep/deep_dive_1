@@ -24,7 +24,7 @@ const profileCard = (user) => {
             $("<h2>").text(`name: ${user.val().name}`).attr("data-name", user.val().name),
             $("<h3>").text(`email: ${user.val().email}`).attr("data-email", user.val().email),
             $("<h3>").text(`birthday: ${user.val().birthday}`).attr("data-birthday", user.val().birthday),
-            $("<p>").text(`Your birthday is in ${calulateBirthday(user.val().birthday)} days`)
+            $("<p>").text(`Your birthday is in ${calulateBirthday(user.val().birthday)} days`),
             $("<p>", { "class": "delete", "id": user.key }).text("X")
         )
     return post.append(newDiv)
