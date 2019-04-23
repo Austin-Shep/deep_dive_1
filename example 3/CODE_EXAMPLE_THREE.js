@@ -13,10 +13,8 @@ $("#sForm").on("submit", (event) => {
     return database.ref("user/").push(newUser).key
 })
 
-const calulateBirthday = (bd) =>{
-    //write a function that takes in a moment formated date as an arg, and return the amount of days till your next birthday
-    return moment().dif(bd, true)
-}
+//write a function that takes in a moment formated date as an arg, and return the amount of days till your next birthday
+const calulateBirthday = bd => moment().dif(bd, true);
 
 const profileCard = (user) => {
     let post = $("#profileDisp"),
@@ -35,6 +33,5 @@ $(document).on("click", ".delete", (event) => {
     return event.target.parentNode.remove()
 })
 
-database.ref("user/").on("child_added", (childSnap) => {
-    return profileCard(childSnap)
-})
+database.ref("user/").on("child_added", (childSnap) => profileCard(childSnap))
+
