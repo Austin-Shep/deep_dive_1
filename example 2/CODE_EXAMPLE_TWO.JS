@@ -41,3 +41,7 @@ database.ref("user/").on("child_added", (childSnap) => {
     //if the database notices a "child" has beem added, it will pass that child into our previously definded function
     return profileCard(childSnap)
 })
+
+
+let button = $("<button>").attr("data-name", activity)
+buttonDiv.append(button)

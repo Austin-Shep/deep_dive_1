@@ -17,6 +17,8 @@
 
 [https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/] Making Calls to an API with Vanilla Javascript (HTTP Requests)
 
+[https://devhints.io/moment] a Moment Cheat sheet
+
 # AJAX/APIs
 ### What Is a remote server?
 A remote server is just someone elses computer running code or applications and managing data. 
@@ -51,12 +53,12 @@ Lets get into some code.
 
 # Javascript Libraries (moment)
 ### What are Libraries?
-Simply put, Libraries are absracted pieces of code written by somebody else so you dont have to. some popular examples:
+Simply put, Libraries are abstracted pieces of code written by somebody else so you dont have to. some popular examples:
 - Jquery
 - MomentJs
 - lodash
 - Express
-- Cherio
+- Cherrio
 - Request
 - async
 - React
